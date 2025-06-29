@@ -1,0 +1,395 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  scroll-behavior: smooth;
+  direction: ltr;
+  text-align: left;
+  background-color: #f4bd48;
+}
+
+
+.display-3 {
+  font-size: 61.5px;
+}
+
+.titleA {
+  direction: rtl;
+  text-align: right;
+}
+
+.titleE {
+  direction: ltr;
+  text-align: left;
+}
+
+header {
+  box-shadow: 0 2px 8px;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.bg-dark {
+  background-color: #01576d !important;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+.nav-link {
+  color: #DDDDDD !important;
+  font-weight: bold;
+  position: relative;
+}
+
+.contact:hover {
+  background-color: #f4bd48;
+  color: #01576d;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+.nav-link:hover {
+  color: #f4bd48 !important;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: white;
+  user-select: none;
+}
+
+#hero .overlay {
+  z-index: 1;
+}
+
+#hero .container {
+  z-index: 2;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  line-height: 1;
+  z-index: 999;
+  display: none;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #efdc6c, #bb962b, #896000, #c6a02f, #fcf68f, #c6a02f);
+  border: 1px solid #01576d;
+  color: #01576d;
+}
+
+#backToTop:hover {
+  background-color: #ffffff !important;
+  transform: scale(1.1);
+  color: #000000;
+  border-color: #000000 !important;
+}
+
+.btn-primary {
+  background-color: #01576d;
+  border-color: #01576d;
+}
+
+.btn-primary:hover {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #1F1F1F;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+/* home-hero-section */
+
+.home-hero-slide {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.home-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1f1f1f80;
+  z-index: 1;
+}
+
+.hero-fixed-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.shadowhero {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Arrow button styles */
+
+.hero-swiper-button-next,
+.hero-swiper-button-prev {
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #f4b30070;
+  border-radius: 50%;
+  color: white !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-swiper-button-next::after,
+.hero-swiper-button-prev::after {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.swiper.home-hero-swiper {
+  height: 100%;
+}
+
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+  z-index: 0;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+.shadowhero {
+  text-shadow: -1px 5px 8px rgba(0, 0, 0, 1.6)
+}
+
+/* Improve text readability on small screens */
+
+@media (max-width: 768px) {
+  .home-hero-slide h1 {
+    font-size: 2rem;
+  }
+
+  .home-hero-slide p {
+    font-size: 1rem;
+  }
+}
+
+#about,
+#mission,
+.p-4 {
+  background: #01576d url('../assets/images/pattern-1.png') repeat !important;
+  background-color: #01576d !important;
+  color: white;
+}
+
+#about h2,
+#mission h2,
+#footer h5,
+.p-4 h5 {
+  color: #f4bd48 !important;
+}
+
+#vision,
+#services,
+body {
+  background:
+    linear-gradient(135deg, #efdc6c, #bb962b, #896000, #c6a02f, #fcf68f, #c6a02f),
+    url('../assets/images/pattern-2.png') !important;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
+}
+
+#vision h2,
+#services h2 {
+  color: #01576d !important;
+}
+
+.p-4 {
+  background-color: #01576d !important;
+  color: white;
+}
+
+#footer {
+  background-color: #01576d !important;
+  color: #FFFFFF;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.gallery-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f4bd48;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.gallery-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Display icon on image hover */
+.zoom-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+.img-wrapper:hover .zoom-icon {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Image zoom effect on hover */
+.img-wrapper:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.profile-body {
+  background: #01576d url('../assets/images/pattern-1.png') repeat !important;
+}
+
+.row {
+  border: 20px rgb(255, 255, 255) !important;
+}
+
+.gallery-img {
+  border: 1px solid #f4bd48;
+  border-radius: 8px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.btn-home {
+  background-color: #f4bd48;
+  color: #01576d;
+}
+
+.btn-home:hover {
+  background-color: #01576d;
+  color: #ffffff;
+}
+
+/* Loading */
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #01576d;
+  /* لون الخلفية أثناء التحميل */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 1s ease;
+}
+
+#myLogo {
+  width: 150px;
+  height: 150px;
+}
+
+#myLogo .st0 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 4;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: draw 3s ease forwards, fillIn 1s ease 3s forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillIn {
+  to {
+    fill: #ffffff;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #01576d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f4bd48;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #01576d;
+}
